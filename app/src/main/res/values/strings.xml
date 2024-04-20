@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestTaskEffective</string>
+    <string name="avia_title">Авиабилеты</string>
+    <string name="hotels_title">Отели</string>
+    <string name="shorter_title">Короче</string>
+    <string name="subscriptions_title">Подписки</string>
+    <string name="profile_title">Профиль</string>
 </resources>

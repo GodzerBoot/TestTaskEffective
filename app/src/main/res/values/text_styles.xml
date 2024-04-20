@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title_1" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/semibold</item>
+        <item name="android:textSize">22pt</item>
+    </style>
+
+    <style name="title_2" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/semibold</item>
+        <item name="android:textSize">20pt</item>
+    </style>
+
+    <style name="title_3" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/medium</item>
+        <item name="android:textSize">16pt</item>
+    </style>
+
+    <style name="title_4" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/regular</item>
+        <item name="android:textSize">14pt</item>
+    </style>
+
+    <style name="text_1" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/regular</item>
+        <item name="android:textSize">16pt</item>
+    </style>
+
+    <style name="text_2" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/semibold</item>
+        <item name="android:textSize">14pt</item>
+    </style>
+
+    <style name="button_text" parent="TextAppearance.AppCompat">
+        <item name="android:font">@font/regular</item>
+        <item name="android:textSize">16pt</item>
+    </style>
+
+    <style name="tab_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10pt</item>
+    </style>
+
+</resources>
