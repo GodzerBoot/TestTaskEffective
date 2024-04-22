@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/avia_title"
+
+    <item
+        android:id="@+id/avia_nav"
+        android:title="@string/avia_title"
         android:icon="@drawable/aviaticket_default"/>
 
-    <item android:title="@string/hotels_title"
+    <item
+        android:id="@+id/hotels_nav"
+        android:title="@string/hotels_title"
         android:icon="@drawable/hotels_default"/>
 
-    <item android:title="@string/shorter_title"
+    <item
+        android:id="@+id/shorter_nav"
+        android:title="@string/shorter_title"
         android:icon="@drawable/shorter_default"/>
 
-    <item android:title="@string/subscriptions_title"
+    <item
+        android:id="@+id/subscriptions_nav"
+        android:title="@string/subscriptions_title"
         android:icon="@drawable/subscriptions_default"/>
 
 
-    <item android:title="@string/profile_title"
+    <item
+        android:id="@+id/profile_nav"
+        android:title="@string/profile_title"
         android:icon="@drawable/profile_default"/>
 </menu>
