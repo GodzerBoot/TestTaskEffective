@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/red"
+    >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis neque ac arcu pharetra, vel blandit sem elementum. Aenean eget velit turpis. Mauris vestibulum nisl ut nibh finibus, a cursus nunc malesuada. Quisque eu nisl malesuada, posuere sapien ut, auctor lorem. Morbi nec suscipit erat. Aliquam accumsan velit congue fermentum ultricies. Curabitur faucibus placerat lacus ut egestas. Proin imperdiet tempus tempus. Nullam vitae volutpat leo. Pellentesque et volutpat purus. Etiam nec leo luctus mi luctus accumsan blandit quis erat. Vivamus placerat ipsum at libero pretium mattis. Phasellus ut maximus magna. Sed malesuada, arcu nec dictum interdum, nisl elit feugiat lectus, at viverra lacus lorem id felis. Nunc eu metus non metus eleifend ultrices id id enim. Aliquam tristique hendrerit ante vel laoreet.
-
-Vivamus scelerisque non mauris vitae blandit. In lacinia finibus sapien, at iaculis purus rutrum cursus. Curabitur tincidunt ac ipsum ac aliquam. Morbi fermentum suscipit enim vel feugiat. Aliquam tincidunt feugiat nisi quis finibus. Donec faucibus gravida nulla eget condimentum. Aliquam laoreet, mauris sed tempus fringilla, orci ligula ornare nulla, eget molestie nisl urna non lacus. Aliquam quis tristique ligula.
-
-Praesent et ipsum at sem cursus suscipit. Morbi finibus volutpat varius. Quisque semper interdum nisi, at consequat turpis condimentum id. Donec vitae tellus consectetur, tincidunt eros sed, rutrum lacus. Fusce nec nunc quis quam gravida placerat consequat nec dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce nec orci maximus, placerat mi et, pulvinar ex. Curabitur fringilla bibendum tempor. Sed ac arcu velit. Mauris non mauris lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sagittis vel turpis nec congue. Cras id odio sed nisi mollis bibendum at vitae ex. In diam diam, tristique in elit ut, dapibus condimentum nibh. Cras mattis semper nunc, quis tincidunt justo luctus id.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam consequat nisi ut venenatis iaculis. Aliquam mattis lacinia sollicitudin. Cras ac efficitur ipsum. Quisque vel felis eu metus condimentum egestas. Vestibulum interdum quam id lectus tempus, id eleifend sapien blandit. Vivamus iaculis porta quam, tristique dapibus libero gravida bibendum. Aenean efficitur, urna sit amet efficitur hendrerit, purus nisl vehicula dolor, ac suscipit tellus mauris eget massa. Nulla risus tellus, mattis in viverra ut, condimentum non metus. Integer vel sapien dictum, pellentesque odio eu, sagittis eros. Proin blandit arcu a orci interdum ornare.
-
-Nam lorem massa, fringilla vel lacinia eget, porta ultrices massa. Curabitur tempor dui nisl, vitae finibus urna sodales euismod. Nam sed nibh id ligula sodales scelerisque sed id dolor. Cras lacinia ex porttitor sapien luctus, vitae luctus metus pulvinar. Praesent auctor eget enim eget dictum. Cras maximus ex et ipsum egestas, ut porta justo finibus. Nam mauris libero, ullamcorper id lobortis et, posuere a diam. Fusce ornare auctor justo, nec efficitur odio aliquet a. Fusce sollicitudin posuere turpis quis consectetur. Sed ullamcorper non odio sed consequat. Sed scelerisque mi eros. Aliquam varius malesuada leo."/>
-
+        android:id="@+id/title_aviatickets"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/main_title"
+        android:gravity="center"
+        android:fontFamily="@font/semibold"
+        android:textSize="22pt"/>
+    <ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title_aviatickets"
+        android:background="@null"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@color/grey_1"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_search"
+            android:background=""
+            android:layout_marginHorizontal="16pt"
+            android:backgroundTint="@color/grey_5"
+            >
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:textSize="20pt"
+                android:queryHint="To"
+                android:searchIcon="@drawable/plane_search_icon"
+                android:queryBackground="@android:color/transparent"
+                >
+            </SearchView>
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:textSize="20pt"
+                android:queryBackground="@android:color/transparent"
+                />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ActionMenuView>
 </androidx.constraintlayout.widget.ConstraintLayout>
