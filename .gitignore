@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+/myFiles/aviaticket_default.svg
+/myFiles/hotels_default.svg
+/myFiles/profile_default.svg
+/myFiles/shorter_default.svg
+/myFiles/subscriptions_default.svg
