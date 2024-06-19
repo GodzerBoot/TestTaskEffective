@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/wherever_icon"
+    android:insetTop="14dp"
+    android:insetLeft="14dp"
+    android:insetRight="14dp"
+    android:insetBottom="14dp"
+    />

@@ -6,4 +6,8 @@
     <string name="subscriptions_title">Подписки</string>
     <string name="profile_title">Профиль</string>
     <string name="main_title">Поиск дешёвых авиабилетов</string>
+    <string name="complex_path_txt">Сложный маршрут</string>
+    <string name="wherever_txt">Куда угодно</string>
+    <string name="weekend_txt">Выходные</string>
+    <string name="hot_txt">Горячие билеты</string>
 </resources>
