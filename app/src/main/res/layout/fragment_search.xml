@@ -8,7 +8,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ActionMenuView
-        android:id="@+id/actionMenuView"
+        android:id="@+id/actionMenu_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -54,7 +54,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actionMenuView"
+        app:layout_constraintTop_toBottomOf="@+id/actionMenu_search"
         app:layout_constraintEnd_toStartOf="@+id/wherever_btn"
         android:backgroundTint="@color/dark_green"
         android:layout_marginTop="24dp"
@@ -67,7 +67,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         app:layout_constraintStart_toEndOf="@id/complex_path_btn"
-        app:layout_constraintTop_toBottomOf="@+id/actionMenuView"
+        app:layout_constraintTop_toBottomOf="@+id/actionMenu_search"
         app:layout_constraintEnd_toStartOf="@+id/weekend_btn"
         android:backgroundTint="@color/blue"
         android:layout_marginTop="24dp"
@@ -80,7 +80,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         app:layout_constraintStart_toEndOf="@id/wherever_btn"
-        app:layout_constraintTop_toBottomOf="@+id/actionMenuView"
+        app:layout_constraintTop_toBottomOf="@+id/actionMenu_search"
         app:layout_constraintEnd_toStartOf="@+id/hot_btn"
         android:backgroundTint="@color/dark_blue"
         android:layout_marginTop="24dp"
@@ -92,7 +92,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         app:layout_constraintStart_toEndOf="@id/weekend_btn"
-        app:layout_constraintTop_toBottomOf="@+id/actionMenuView"
+        app:layout_constraintTop_toBottomOf="@+id/actionMenu_search"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/red"
         android:layout_marginTop="24dp"
@@ -151,6 +151,138 @@
         style="@style/text_2"
         android:textColor="@color/white"
         android:maxWidth="80dp"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_quickButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="complex_path_txt, wherever_txt, weekend_txt, hot_txt"/>
+
+    <LinearLayout
+        android:id="@+id/actionMenu_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_shape"
+        android:backgroundTint="@color/grey_3"
+        android:orientation="vertical"
+        android:divider="@drawable/divider_search"
+        android:showDividers="middle"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_quickButtons">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/hot_icon"
+                android:id="@+id/popular_img1"
+
+                />
+
+            <TextView
+                android:id="@+id/title_popular1"
+                style="@style/title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/popular_img1"
+                android:text="title1"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_popular1"
+                android:layout_toEndOf="@+id/popular_img1"
+                android:text="description1"
+                android:textColor="@color/grey_6" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <ImageView
+                android:id="@+id/popular_img2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/hot_icon"
+
+                />
+
+            <TextView
+                android:id="@+id/title_popular2"
+                style="@style/title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/popular_img2"
+                android:text="title2"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_popular2"
+                android:layout_toEndOf="@+id/popular_img2"
+                android:text="Популярное направление"
+                android:textColor="@color/grey_6" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:id="@+id/popular_img3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/hot_icon"
+
+                />
+
+            <TextView
+                android:id="@+id/title_popular3"
+                style="@style/title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/popular_img3"
+                android:text="title3"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_popular3"
+                android:layout_toEndOf="@+id/popular_img3"
+                android:text="Популярное направление"
+                android:textColor="@color/grey_6" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
