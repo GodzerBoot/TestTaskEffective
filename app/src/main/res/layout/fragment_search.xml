@@ -177,6 +177,7 @@
 
 
         <RelativeLayout
+            android:id="@+id/popular1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
@@ -208,7 +209,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/title_popular1"
                 android:layout_toEndOf="@+id/popular_img1"
-                android:text="description1"
+                android:text="Популярное направление"
                 android:textColor="@color/grey_6" />
         </RelativeLayout>
         <RelativeLayout
